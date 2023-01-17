@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-family: "rubik", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #555;
+
+    font-size: 3rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-section {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(212, 250, 206, 0.452),
+        rgba(40, 180, 133, 0.685)
+      ),
+    url("seo-main-image.jpg");
+    background-size: cover;
+    background-position: center;
+
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: #444;
+    margin-bottom: 80px;
+}
+
+.main-heading {
+    animation-name: moveInLeft;
+  animation-duration: 1s;
+
+  /* animation-delay: 3s; */
+  /* animation-iteration-count: 3; */
+  animation-timing-function: ease-in;
+}
+
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+      /* transform: rotate(180deg); */
+      /* transform: scale(1.5); */
+    }
+  
+    80% {
+      transform: translateX(10px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  .main-secondary {
+    animation-name: moveInRight;
+    animation-duration: 1s;
+  
+    /* animation-delay: 3s; */
+    /* animation-iteration-count: 3; */
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(+100px);
+      /* transform: rotate(180deg); */
+      /* transform: scale(1.5); */
+    }
+  
+    80% {
+      transform: translateX(-10px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  .main-paragraph {
+    font-size: 20px;
+    color: black;
+
+    animation-name: moveInFromTop;
+    animation-duration: 1s;
+  
+    /* animation-delay: 3s; */
+    /* animation-iteration-count: 3; */
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes moveInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateX(0);
+      /* transform: rotate(180deg); */
+      transform: scale(1.5);
+    }
+  
+    80% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  .secondary-heading {
+    margin-bottom: 20px;
+  }
+
+  .main-section {
+    margin-bottom: 4rem;
+  }
+
+  .skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 80px;
+
+    background-color: rgba(212, 250, 206, 0.452);
+    margin-bottom: 100px;
+    padding: 20px;
+  }
+
+  .skill-icon {
+    box-shadow: 0.5rem 0.5rem 2rem 2rem rgba(0, 0, 0, 0.05);
+        border-radius: 11px;
+        overflow: hidden;
+        transition: all 0.4s;
+  }
+
+  .skill-icon:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.03);
+  }
+
+  .icon-paragraph {
+    font-size: 3rem;
+  }
+
+  /* .css3 {
+    height: 300px;
+  }
+
+  .seo {
+    height: 300px;
+  }
+
+  .wordpress {
+    height: 300px;
+  } */
+
+  .summary-heading {
+    margin-bottom: 20px;
+  }
+
+  .summary-paragraph {
+    text-align: start;
+    margin-left: 10px;
+    font-size: 2rem;
+
+    margin-bottom: 80px;
+  }
+
+  .education-paragraph {
+    margin-left: 10px;
+    font-size: 2rem;
+
+    margin-bottom: 80px;
+  }
+
+  .online-courses-paragraph {
+    margin-left: 10px;
+    font-size: 2rem;
+  }
+
+  .online-courses-paragraph:last-child {
+    margin-bottom: 100px;
+  }
+
+  .footer {
+    background-color: rgba(212, 250, 206, 0.452);
+    padding: 20px;
+  }
+
+  .social-media-icons {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    /* margin-left: 10px; */
+
+    flex-direction: column;
+  }
+
+  .github-icon {
+    color: black;
+  }
+
+  .github-icon:hover {
+    animation-name: moveInFromTop;
+    animation-duration: 1s;
+  
+    /* animation-delay: 3s; */
+    /* animation-iteration-count: 3; */
+    animation-timing-function: ease-in;
+  }
+
+  .github-paragraph {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .linkedin-icon {
+    color: blue;
+  }
+
+  .linkedin-icon:hover {
+    animation-name: moveInFromTop;
+    animation-duration: 1s;
+  
+    /* animation-delay: 3s; */
+    /* animation-iteration-count: 3; */
+    animation-timing-function: ease-in;
+  }
+
+  .linkedin-paragraph {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .social-media-paragraph {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .hero-section {
+    height: 100%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    body {
+    font-size: 2.6rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .skill-list {
+    gap: 40px;
+    }
+  }
+
+/*   @media (max-width: 600px) {
+    .icon-paragraph {
+    font-size: 2rem;
+    }
+  } */
+
+/*   @media (max-width: 900px) {
+    .icon-image {
+    height: 200px;
+    }
+  } */
+
+/*   @media (max-width: 600px) {
+    .icon-image {
+    height: 100px;
+    }
+  } */
+
+  @media (max-width: 600px) {
+    .main-paragraph
+    .summary-paragraph, 
+    .education-paragraph,
+    .online-courses-paragraph,
+    .github-paragraph,
+    .linkedin-paragraph {
+    font-size: 1.6rem;
+    }
+  }
+
+ @media (max-width: 600px) {
+    .main-heading,
+    .main-secondary {
+    text-align: center;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .main-paragraph:last-child {
+    margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .summary-paragraph {
+    font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .social-media-paragraph {
+    font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .summary-paragraph, 
+    .education-paragraph,
+    .linkedin-paragraph {
+    margin-bottom: 40px;
+    }
+  }
+ 
+  @media (max-width: 600px) {
+    .online-courses-paragraph:last-child  {
+    margin-bottom: 40px;
+    }
+  }
+
+ @media (max-width: 600px) {
+    .skill-list {
+      display: flex;
+        flex-direction: column;
+      flex-wrap: wrap;
+        row-gap: 80px;
+    }
+  }
+
+ @media (max-width: 600px) {
+    .icon-image {
+        height: 150px;
+    }
+  }
+
+/*  @media (max-width: 350px) {
+    .icon-image {
+        width: 100%;
+    }
+  } */
